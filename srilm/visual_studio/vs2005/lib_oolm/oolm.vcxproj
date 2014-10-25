@@ -1,0 +1,458 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_c|Win32">
+      <Configuration>Debug_c</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_c|x64">
+      <Configuration>Debug_c</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_c|Win32">
+      <Configuration>Release_c</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_c|x64">
+      <Configuration>Release_c</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E8584E80-48BD-44BF-B1AE-89692BA464A0}</ProjectGuid>
+    <RootNamespace>srilm</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_c|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_c|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_c|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_c|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_c|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_c|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_c|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_c|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_c|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_c|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_c|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_c|x64'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../../../dstruct/src;../../../flm/src;../../../lattice/src;../../../misc/src;../../../lm/src;../../../zlib/src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;INSTANTIATE_TEMPLATES;NEED_RAND48;DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <OpenMPSupport>false</OpenMPSupport>
+      <PrecompiledHeader />
+      <WarningLevel>Level2</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/IGNORE:4006 /IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>..\..\..\lib\$(Configuration)\$(ProjectName).lib</OutputFile>
+    </Lib>
+    <PostBuildEvent>
+      <Command />
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>../../../dstruct/src;../../../flm/src;../../../lattice/src;../../../misc/src;../../../lm/src;../../../zlib/src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;INSTANTIATE_TEMPLATES;NEED_RAND48;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <OpenMPSupport>false</OpenMPSupport>
+      <PrecompiledHeader />
+      <WarningLevel>Level2</WarningLevel>
+      <DebugInformationFormat />
+      <CompileAs>Default</CompileAs>
+      <DisableSpecificWarnings>4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <UseUnicodeResponseFiles>true</UseUnicodeResponseFiles>
+      <AdditionalOptions>/IGNORE:4006 /IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>..\..\..\lib\$(Configuration)\$(ProjectName).lib</OutputFile>
+    </Lib>
+    <PostBuildEvent>
+      <Command />
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_c|Win32'">
+    <ClCompile>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>../../../dstruct/src;../../../flm/src;../../../lattice/src;../../../misc/src;../../../lm/src;../../../zlib/src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;INSTANTIATE_TEMPLATES;NEED_RAND48;USE_SARRAY;USE_SARRAY_TRIE;USE_SARRAY_MAP2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <OpenMPSupport>false</OpenMPSupport>
+      <PrecompiledHeader />
+      <WarningLevel>Level2</WarningLevel>
+      <DebugInformationFormat />
+      <CompileAs>Default</CompileAs>
+      <DisableSpecificWarnings>4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <UseUnicodeResponseFiles>true</UseUnicodeResponseFiles>
+      <AdditionalOptions>/IGNORE:4006 /IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>..\..\..\lib\$(Configuration)\$(ProjectName).lib</OutputFile>
+    </Lib>
+    <PostBuildEvent>
+      <Command />
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_c|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../../../dstruct/src;../../../flm/src;../../../lattice/src;../../../misc/src;../../../lm/src;../../../zlib/src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;INSTANTIATE_TEMPLATES;NEED_RAND48;USE_SARRAY;USE_SARRAY_TRIE;USE_SARRAY_MAP2;DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <OpenMPSupport>false</OpenMPSupport>
+      <PrecompiledHeader />
+      <WarningLevel>Level2</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/IGNORE:4006 /IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>..\..\..\lib\$(Configuration)\$(ProjectName).lib</OutputFile>
+    </Lib>
+    <PostBuildEvent>
+      <Command />
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <OpenMPSupport>false</OpenMPSupport>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../../../dstruct/src;../../../flm/src;../../../lattice/src;../../../misc/src;../../../lm/src;../../../zlib/src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;INSTANTIATE_TEMPLATES;NEED_RAND48;USE_LONGLONG_COUNTS;DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level2</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/IGNORE:4006 /IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>..\..\..\lib\$(Platform)-$(Configuration)\$(ProjectName).lib</OutputFile>
+    </Lib>
+    <PostBuildEvent>
+      <Command />
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <OpenMPSupport>false</OpenMPSupport>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>../../../dstruct/src;../../../flm/src;../../../lattice/src;../../../misc/src;../../../lm/src;../../../zlib/src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;INSTANTIATE_TEMPLATES;NEED_RAND48;USE_LONGLONG_COUNTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level2</WarningLevel>
+      <DebugInformationFormat />
+      <CompileAs>Default</CompileAs>
+      <DisableSpecificWarnings>4996;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <UseUnicodeResponseFiles>true</UseUnicodeResponseFiles>
+      <AdditionalOptions>/IGNORE:4006 /IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>..\..\..\lib\$(Platform)-$(Configuration)\$(ProjectName).lib</OutputFile>
+    </Lib>
+    <PostBuildEvent>
+      <Command />
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_c|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <OpenMPSupport>false</OpenMPSupport>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>../../../dstruct/src;../../../flm/src;../../../lattice/src;../../../misc/src;../../../lm/src;../../../zlib/src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;INSTANTIATE_TEMPLATES;NEED_RAND48;USE_SARRAY;USE_SARRAY_TRIE;USE_SARRAY_MAP2;USE_LONGLONG_COUNTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level2</WarningLevel>
+      <DebugInformationFormat />
+      <CompileAs>Default</CompileAs>
+      <DisableSpecificWarnings>4996;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <UseUnicodeResponseFiles>true</UseUnicodeResponseFiles>
+      <AdditionalOptions>/IGNORE:4006 /IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>..\..\..\lib\$(Platform)-$(Configuration)\$(ProjectName).lib</OutputFile>
+    </Lib>
+    <PostBuildEvent>
+      <Command />
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_c|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <OpenMPSupport>false</OpenMPSupport>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../../../dstruct/src;../../../flm/src;../../../lattice/src;../../../misc/src;../../../lm/src;../../../zlib/src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;INSTANTIATE_TEMPLATES;NEED_RAND48;USE_SARRAY;USE_SARRAY_TRIE;USE_SARRAY_MAP2;USE_LONGLONG_COUNTS;DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level2</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/IGNORE:4006 /IGNORE:4221 %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>..\..\..\lib\$(Platform)-$(Configuration)\$(ProjectName).lib</OutputFile>
+    </Lib>
+    <PostBuildEvent>
+      <Command />
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\lm\src\AdaptiveMarginals.cc" />
+    <ClCompile Include="..\..\..\lm\src\AdaptiveMix.cc" />
+    <ClCompile Include="..\..\..\lm\src\BayesMix.cc" />
+    <ClCompile Include="..\..\..\lm\src\Bleu.cc" />
+    <ClCompile Include="..\..\..\lm\src\CacheLM.cc" />
+    <ClCompile Include="..\..\..\lm\src\ClassNgram.cc" />
+    <ClCompile Include="..\..\..\lm\src\Counts.cc" />
+    <ClCompile Include="..\..\..\lm\src\DecipherNgram.cc" />
+    <ClCompile Include="..\..\..\lm\src\DFNgram.cc" />
+    <ClCompile Include="..\..\..\lm\src\Discount.cc" />
+    <ClCompile Include="..\..\..\lm\src\DynamicLM.cc" />
+    <ClCompile Include="..\..\..\lm\src\HiddenNgram.cc" />
+    <ClCompile Include="..\..\..\lm\src\HiddenSNgram.cc" />
+    <ClCompile Include="..\..\..\lm\src\hmaxent.cc" />
+    <ClCompile Include="..\..\..\lm\src\HMMofNgrams.cc" />
+    <ClCompile Include="..\..\..\lm\src\LM.cc" />
+    <ClCompile Include="..\..\..\lm\src\LMClient.cc" />
+    <ClCompile Include="..\..\..\lm\src\LMStats.cc" />
+    <ClCompile Include="..\..\..\lm\src\LMThreads.cc" />
+    <ClCompile Include="..\..\..\lm\src\LoglinearMix.cc" />
+    <ClCompile Include="..\..\..\lm\src\matherr.c" />
+    <ClCompile Include="..\..\..\lm\src\MEModel.cc" />
+    <ClCompile Include="..\..\..\lm\src\MSWebNgramLM.cc" />
+    <ClCompile Include="..\..\..\lm\src\MultiwordLM.cc" />
+    <ClCompile Include="..\..\..\lm\src\MultiwordVocab.cc" />
+    <ClCompile Include="..\..\..\lm\src\NBest.cc" />
+    <ClCompile Include="..\..\..\lm\src\NBestSet.cc" />
+    <ClCompile Include="..\..\..\lm\src\NgramCountLM.cc" />
+    <ClCompile Include="..\..\..\lm\src\NgramLM.cc" />
+    <ClCompile Include="..\..\..\lm\src\NgramProbArrayTrie.cc" />
+    <ClCompile Include="..\..\..\lm\src\NgramStats.cc" />
+    <ClCompile Include="..\..\..\lm\src\NgramStatsDouble.cc" />
+    <ClCompile Include="..\..\..\lm\src\NgramStatsFloat.cc" />
+    <ClCompile Include="..\..\..\lm\src\NgramStatsInt.cc" />
+    <ClCompile Include="..\..\..\lm\src\NgramStatsLong.cc" />
+    <ClCompile Include="..\..\..\lm\src\NgramStatsLongLong.cc" />
+    <ClCompile Include="..\..\..\lm\src\NgramStatsShort.cc" />
+    <ClCompile Include="..\..\..\lm\src\NgramStatsXCount.cc" />
+    <ClCompile Include="..\..\..\lm\src\NonzeroLM.cc" />
+    <ClCompile Include="..\..\..\lm\src\Prob.cc" />
+    <ClCompile Include="..\..\..\lm\src\RefList.cc" />
+    <ClCompile Include="..\..\..\lm\src\SimpleClassNgram.cc" />
+    <ClCompile Include="..\..\..\lm\src\simpleTrigram.cc" />
+    <ClCompile Include="..\..\..\lm\src\SkipNgram.cc" />
+    <ClCompile Include="..\..\..\lm\src\StopNgram.cc" />
+    <ClCompile Include="..\..\..\lm\src\StopNgramStats.cc" />
+    <ClCompile Include="..\..\..\lm\src\SubVocab.cc" />
+    <ClCompile Include="..\..\..\lm\src\TaggedNgram.cc" />
+    <ClCompile Include="..\..\..\lm\src\TaggedNgramStats.cc" />
+    <ClCompile Include="..\..\..\lm\src\TaggedVocab.cc" />
+    <ClCompile Include="..\..\..\lm\src\TextStats.cc" />
+    <ClCompile Include="..\..\..\lm\src\Trellis.cc" />
+    <ClCompile Include="..\..\..\lm\src\VarNgram.cc" />
+    <ClCompile Include="..\..\..\lm\src\Vocab.cc" />
+    <ClCompile Include="..\..\..\lm\src\VocabDistance.cc" />
+    <ClCompile Include="..\..\..\lm\src\VocabMap.cc" />
+    <ClCompile Include="..\..\..\lm\src\VocabMultiMap.cc" />
+    <ClCompile Include="..\..\..\lm\src\WordAlign.cc" />
+    <ClCompile Include="..\..\..\lm\src\WordLattice.cc" />
+    <ClCompile Include="..\..\..\lm\src\WordMesh.cc" />
+    <ClCompile Include="..\..\..\lm\src\XCount.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\lm\src\AdaptiveMarginals.h" />
+    <ClInclude Include="..\..\..\lm\src\AdaptiveMix.h" />
+    <ClInclude Include="..\..\..\lm\src\BayesMix.h" />
+    <ClInclude Include="..\..\..\lm\src\CacheLM.h" />
+    <ClInclude Include="..\..\..\lm\src\ClassNgram.h" />
+    <ClInclude Include="..\..\..\lm\src\Counts.h" />
+    <ClInclude Include="..\..\..\lm\src\DecipherNgram.h" />
+    <ClInclude Include="..\..\..\lm\src\DFNgram.h" />
+    <ClInclude Include="..\..\..\lm\src\Discount.h" />
+    <ClInclude Include="..\..\..\lm\src\DynamicLM.h" />
+    <ClInclude Include="..\..\..\lm\src\HiddenNgram.h" />
+    <ClInclude Include="..\..\..\lm\src\HiddenSNgram.h" />
+    <ClInclude Include="..\..\..\lm\src\hmaxent.h" />
+    <ClInclude Include="..\..\..\lm\src\HMMofNgrams.h" />
+    <ClInclude Include="..\..\..\lm\src\LM.h" />
+    <ClInclude Include="..\..\..\lm\src\LMStats.h" />
+    <ClInclude Include="..\..\..\lm\src\LMThreads.h" />
+    <ClInclude Include="..\..\..\lm\src\LoglinearMix.h" />
+    <ClInclude Include="..\..\..\lm\src\MEModel.h" />
+    <ClInclude Include="..\..\..\lm\src\MSWebNgramLM.h" />
+    <ClInclude Include="..\..\..\lm\src\MultiAlign.h" />
+    <ClInclude Include="..\..\..\lm\src\MultiwordLM.h" />
+    <ClInclude Include="..\..\..\lm\src\MultiwordVocab.h" />
+    <ClInclude Include="..\..\..\lm\src\NBest.h" />
+    <ClInclude Include="..\..\..\lm\src\NBestSet.h" />
+    <ClInclude Include="..\..\..\lm\src\Ngram.h" />
+    <ClInclude Include="..\..\..\lm\src\NgramCountLM.h" />
+    <ClInclude Include="..\..\..\lm\src\NgramProbArrayTrie.h" />
+    <ClInclude Include="..\..\..\lm\src\NgramStats.h" />
+    <ClInclude Include="..\..\..\lm\src\NonzeroLM.h" />
+    <ClInclude Include="..\..\..\lm\src\NullLM.h" />
+    <ClInclude Include="..\..\..\lm\src\Prob.h" />
+    <ClInclude Include="..\..\..\lm\src\RefList.h" />
+    <ClInclude Include="..\..\..\lm\src\SimpleClassNgram.h" />
+    <ClInclude Include="..\..\..\lm\src\SkipNgram.h" />
+    <ClInclude Include="..\..\..\lm\src\StopNgram.h" />
+    <ClInclude Include="..\..\..\lm\src\StopNgramStats.h" />
+    <ClInclude Include="..\..\..\lm\src\SubVocab.h" />
+    <ClInclude Include="..\..\..\lm\src\TaggedNgram.h" />
+    <ClInclude Include="..\..\..\lm\src\TaggedNgramStats.h" />
+    <ClInclude Include="..\..\..\lm\src\TaggedVocab.h" />
+    <ClInclude Include="..\..\..\lm\src\TextStats.h" />
+    <ClInclude Include="..\..\..\lm\src\Trellis.h" />
+    <ClInclude Include="..\..\..\lm\src\VarNgram.h" />
+    <ClInclude Include="..\..\..\lm\src\Vocab.h" />
+    <ClInclude Include="..\..\..\lm\src\VocabDistance.h" />
+    <ClInclude Include="..\..\..\lm\src\VocabMap.h" />
+    <ClInclude Include="..\..\..\lm\src\VocabMultiMap.h" />
+    <ClInclude Include="..\..\..\lm\src\WordAlign.h" />
+    <ClInclude Include="..\..\..\lm\src\WordLattice.h" />
+    <ClInclude Include="..\..\..\lm\src\WordMesh.h" />
+    <ClInclude Include="..\..\..\lm\src\XCount.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
