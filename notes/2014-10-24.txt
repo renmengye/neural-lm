@@ -1,0 +1,5 @@
+Created functions for feedforward neural language model and scripts for splitting data for training, validating, and testing purpose.
+
+Created another preprocessing script that divide each sentence each line, so that the text can be fed in SRILM for ngram language modelling.
+
+Used SRILM to model the enwik8 corpus. Used default trigram with GT discouting and Katz backoff.
