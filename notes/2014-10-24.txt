@@ -3,3 +3,10 @@ Created functions for feedforward neural language model and scripts for splittin
 Created another preprocessing script that divide each sentence each line, so that the text can be fed in SRILM for ngram language modelling.
 
 Used SRILM to model the enwik8 corpus. Used default trigram with GT discouting and Katz backoff.
+
+Set up GitHub repository and SSH key.
+
+Split the corpus: split by shuffling sentences or direct split by volume?
+Split by shuffling: average the language because some unseen articles may be different. Split by direct: shuffle sentences maybe cheating. Conclusion: direct split by volume, 10-fold cross validation, fixed portion test set for the end of the corpus.
+
+Discount rarely seen items.

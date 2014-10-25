@@ -6,12 +6,12 @@
 clear all;
 fclose all;
 fprintf('Reading corpus...\n');
-corpus_f = fopen('text8_punc');
+corpus_f = fopen('../data/text8_punc');
 corpus_text = textscan(corpus_f, '%s');
 NN = size(corpus_text{1,1}, 1);
-corpus_num_array = zeros(NN, 1);
+corpus = zeros(NN, 1);
 dict = struct;
-index = 0;
+index = 1;
 progress = 0;
 fprintf('Building dictionary...\n');
 for j = 1 : NN
@@ -21,10 +21,10 @@ for j = 1 : NN
         progress = progress + 1;
     end
     if isfield(dict, word)
-        corpus_num_array(j) = dict.(word);
+        corpus(j) = dict.(word);
     else
         dict.(word) = index;
-        corpus_num_array(j) = index;
+        corpus(j) = index;
         index = index + 1;
     end 
 end
@@ -32,5 +32,5 @@ fprintf('\n');
 clear corpus_text;
 clear corpus_text_array;
 fclose(corpus_f);
-save('word_to_int_dict.mat','dict');
-save('corpus_int.mat','corpus_num_array');
+save('../data/word_to_int_dict.mat', 'dict');
+save('../data/corpus_int.mat', 'corpus');

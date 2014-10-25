@@ -1,0 +1,9 @@
+Finished discount rarely seen items script. Re-index new corpus and produce new dict.
+
+Start working on cost function.
+
+Derived error derivatives.
+
+Thinking instead of passing the target vector in one-hot encoding, we can simply pass the target in terms of the class index. And we can also pass input in terms of class index. Although losing a little generality, (a classifier has to have some class in the output but the input is not necessarily one-hot), but this is computationally cheaper because otherwise we will end up multiplying 54K zeros.
+
+Thinking whether we should pretrain the encoding layer. Need to read some paper related to pretraining and compare the performance of with pretrain and without pretrain.
