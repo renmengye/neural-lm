@@ -1,4 +1,4 @@
-function [ cost, cost_deriv ] = ff_nn_cost( w, siz, data, target, wt_reg )
+function [ cost, cost_deriv, CE ] = ff_nn_cost( w, siz, data, target, wt_reg )
 %ff_nn_cost Compute the cost function and weight derivatives for a
 %one hidden layer feedforward neural net language model.
 % ff_nn_cost( weights, examples )
@@ -40,7 +40,6 @@ E = 0;
 for ex_i = 1 : N
     E = E - log(y(ex_i, target(ex_i)));
 end
-E = E + wt_reg * (w' * w);
 dE_dz = y;
 for ex_i = 1 : N
     dE_dz(ex_i, target(ex_i)) = y(ex_i, target(ex_i)) - 1;
@@ -61,13 +60,20 @@ for ex_i = 1 : N
     end
     dE_dC = dE_dC + x * dE_df;
 end
-
-cost = E;
+C_ = reshape(C, [V*D, 1]);
+U_ = U;
+U_(1,:) = 0;
+U_ = reshape(U_, [(D * n + 1) * H, 1]);
+W_ = W;
+W_(1,:) = 0;
+W_ = reshape(W_, [(H + 1) * V, 1]);
+cost = E + wt_reg * ((C_' * C_) + (U_' * U_) + (W_' * W_));
+CE = E;
 cost_deriv = [
     reshape(dE_dC, [V * D, 1]);...
     reshape(dE_dU, [(D * n + 1) * H, 1]);...
     reshape(dE_dW, [(H + 1) * V, 1])
     ];
-cost_deriv = cost_deriv + 2 * wt_reg * w;
+cost_deriv = cost_deriv + 2 * wt_reg * [C_; U_; W_];
 
 end

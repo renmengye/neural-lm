@@ -1,0 +1,10 @@
+clear all;
+close all;
+consts;
+train_data = load(sprintf(TRAIN_DATA, 0));
+train_data = train_data.train_data;
+valid_data = load(sprintf(VALID_DATA, 0));
+valid_data = valid_data.valid_data;
+dict = load(DICT_SHORT);
+dict = dict.dict;
+vocabs = fieldnames(dict);

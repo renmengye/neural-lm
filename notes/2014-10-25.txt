@@ -22,3 +22,7 @@ Editing cost function and cost derivative. Implemented checkgrad but the derivat
 Trigram model finished evaluating. Next time should turn off debug mode. ppl = 124.249, ppl1 = 168.041.
 
 Training the neural nets. The output tend to be the same accrossing seen data, not differentiating the classes. Investigating.
+
+First, over-regularization.
+Second, used rng('shuffle', 'twistter'), the problem seems to disappear.
+Always pick a new seed every time. Otherwise have the same random number. 

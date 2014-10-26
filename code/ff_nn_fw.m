@@ -35,10 +35,10 @@ f = zeros(N, D * n + 1);
 for i = 1 : N
     % Feature vector of n words.
     f_temp = C(data(i, :), :);
-    f(i, :) = [0 reshape(f_temp, [1, D * n])];
+    f(i, :) = [1 reshape(f_temp, [1, D * n])];
 
     % Hidden units.
-    h(i, :) = [0 tansig(f(i, :) * U)];
+    h(i, :) = [1 tansig(f(i, :) * U)];
 
     % Output.
     y(i, :) = softmax((h(i, :) * W)');

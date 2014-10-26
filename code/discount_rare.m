@@ -11,7 +11,7 @@ edges = 1 : N;
 
 % One-gram stats.
 one_gram_stats = histc(corpus, edges);
-CUTOFF = 5;
+CUTOFF = 10;
 dict = struct;
 newidx = 1;
 

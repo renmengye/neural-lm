@@ -1,0 +1,12 @@
+Used wikipedia corpus to train.
+64% training data, 16% valid data, 20% test data.
+5 big epochs.
+12 million training windows, too large to run all windows one shot.
+Each epoch pick random 1000 training windows and 100 validation windows.
+CE (per example window) decrease stably from 600 to 30. Speed slows down around 30.
+Learning rate = 1.
+Initial weight = uniformly random (0,1).
+Momentum = 0.1.
+Regularization = 0.0003.
+These parameter determined from a toy set yesterday.
+5 million parameters. Still very large. I think the biggest waste is the output fully connected layer since it maps to all vocabulary and it is fully connected (no shared weights). We can probably use the log bilinear to decode the representation space vector into a vocabulary space probability vector.

@@ -6,5 +6,5 @@ DICT_SHORT = strcat(DATA_FOLDER, 'word_to_int_dict_short.mat');
 WIKI8020 = 'wiki-64-16-20/';
 WIKI7525 = 'wiki-67-8-25/';
 TRAIN_DATA = strcat(DATA_FOLDER, WIKI8020, 'wiki_train_%d.mat');
-VALID_DATA = strcat(DATA_FOLDER, 'wiki_valid_%d.mat');
-TEST_DATA = strcat(DATA_FOLDER, 'wiki_test.mat');
+VALID_DATA = strcat(DATA_FOLDER, WIKI8020, 'wiki_valid_%d.mat');
+TEST_DATA = strcat(DATA_FOLDER,  WIKI8020, 'wiki_test.mat');
