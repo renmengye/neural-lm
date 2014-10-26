@@ -5,8 +5,8 @@ fclose all;
 sent_mark = 'period_';
 
 % Constants.
-train_ratio = 0.75;
-kfold = 10;
+train_ratio = 0.80;
+kfold = 5;
 valid_ratio = train_ratio / kfold;
 test_ratio = 1 - train_ratio;
 

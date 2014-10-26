@@ -9,4 +9,4 @@ Set up GitHub repository and SSH key.
 Split the corpus: split by shuffling sentences or direct split by volume?
 Split by shuffling: average the language because some unseen articles may be different. Split by direct: shuffle sentences maybe cheating. Conclusion: direct split by volume, 10-fold cross validation, fixed portion test set for the end of the corpus.
 
-Discount rarely seen items.
+Discount rarely seen items. Created script to discount. Set to at least seen 5 times.

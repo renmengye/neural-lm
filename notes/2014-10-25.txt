@@ -7,3 +7,18 @@ Derived error derivatives.
 Thinking instead of passing the target vector in one-hot encoding, we can simply pass the target in terms of the class index. And we can also pass input in terms of class index. Although losing a little generality, (a classifier has to have some class in the output but the input is not necessarily one-hot), but this is computationally cheaper because otherwise we will end up multiplying 54K zeros.
 
 Thinking whether we should pretrain the encoding layer. Need to read some paper related to pretraining and compare the performance of with pretrain and without pretrain.
+
+Does the output layer has to output the probability of each vocabulary? Can we use the same feature space representation? And use the same linear map the get the vocabulary space probability distribution? So this can effectively reduce the number of parameters from hidden to output layer. This idea is similar to log bilinear model, where you take the current word and map to the same representation space and compare the probability in that space. 
+
+Need to write a checkgrad routine with a small data set to check that the cost derivative is correctly implemented.
+
+Implement dropout?
+
+K-fold speed up?
+Download a paper and can read into it if validation time is bottle neck. For now we can just use one k-fold portion as held out data.
+
+Editing cost function and cost derivative. Implemented checkgrad but the derivative result doesn't match. Off by a constant 0.6931. Investigating. This is caused by natural log and log2. Now all gradient is fixed. No regularization for now.
+
+Trigram model finished evaluating. Next time should turn off debug mode. ppl = 124.249, ppl1 = 168.041.
+
+Training the neural nets. The output tend to be the same accrossing seen data, not differentiating the classes. Investigating.
