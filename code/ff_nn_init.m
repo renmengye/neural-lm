@@ -1,9 +1,10 @@
 hyp = struct;
 hyp.init = 0.001;
 hyp.lr = 0.01;
+hyp.lr_decay = 0.98;
 hyp.mom = 0.1;
 hyp.reg = 5e-5;
-hyp.epochs = 10;
+hyp.epochs = 100;
 hyp.epoch_siz = 1000;
 hyp.epoch_vsiz = 100;
 hyp.ctx = 5;

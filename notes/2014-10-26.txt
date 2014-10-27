@@ -10,3 +10,32 @@ Momentum = 0.1.
 Regularization = 0.0003.
 These parameter determined from a toy set yesterday.
 5 million parameters. Still very large. I think the biggest waste is the output fully connected layer since it maps to all vocabulary and it is fully connected (no shared weights). We can probably use the log bilinear to decode the representation space vector into a vocabulary space probability vector.
+
+After traning with 20 epochs
+lr = 0.01, decay 98% every epoch.
+momentum = 0.1
+initial weight = 1e-3
+regularization = 5e-5
+context window = 5
+cut off rarely seen vocab = 10
+Each epoch is 1000 random training windows and 100 validation windows.
+CE from 10.5 to 7.8. Perplexity is 1800. This is not good. A simple evaluation shown that almost all sequence of words is giving same prediction, basically the prior distribution of the words.
+Now try 20 more epochs.
+
+First 20 epoch:
+ff-2014-10-26-22-02-14.mat
+
+next 20-40 epoch:
+ff-2014-10-26-23-11-10.mat
+
+Turns out that the bias unit is learning the prior
+    'the'
+    'comma_'
+    'period_'
+    'unk_'
+    'of'
+    'quote_'
+    'and'
+    'in'
+    'a'
+    'one'
